@@ -1,0 +1,256 @@
+@import "reset.css";
+@import "fonts.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  transition: 800ms all ease;
+}
+
+body {
+  background-color: #F9FBFF;
+  font-family: Helvetica;
+  color: #2E333A;
+}
+
+div.menu-main {
+  z-index: 10;
+  font-size: 1.25vw;
+  font-weight: 500;
+  width: 100vw;
+  height: 6vw;
+  background-color: #ffffff;
+  position: fixed;
+}
+div.menu-main-list {
+  width: 96vw;
+  margin-left: 2vw;
+  margin-top: 1.1vw;
+}
+div.menu-main-list ul {
+  width: 96vw;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  margin-top: -0.2vw;
+}
+div.menu-main-list ul img{
+  width: auto;
+  height: 2vw;
+}
+div.menu-main-list ul a.logo img{
+  margin-top: -0.3vw;
+}
+div.menu-main-list a {
+  text-decoration: none;
+  display: block;
+  color: #2E333A;
+}
+div.menu-main-list li {
+  display: inline-block;
+  padding-left: 1.7vw;
+}
+div.menu-main-list li:first-child {
+  padding-left: 0vw;
+}
+
+li a.following p {
+  opacity: 40%;
+}
+
+li a.mainpage p {
+  opacity: 40%;
+}
+
+li a.following p:hover {
+  opacity: 60%;
+}
+
+li a.mainpage p:hover {
+  opacity: 60%;
+}
+
+div.menu-main-list li div.search {
+  background-color: #EAEBEB;
+  width: 63vw;
+  height: 3.75vw;
+  border-radius: 50vw;
+}
+div.menu-main-list li div.search p {
+  padding-top: 1.4vw;
+  padding-left: 1.4vw;
+  opacity: 40%;
+}
+div.menu-main-list li .create img {
+  width: 4vw;
+  height: 4vw;
+  margin-left: -1vw;
+  margin-right: -1vw;
+}
+
+div.create-guide {
+  padding-top: 6vw;
+}
+div.cover {
+  width: 100vw;
+  height: 24vw;
+}
+
+div.cover .image {
+  width: 100vw;
+  height: 24vw;
+  background-color: #ffffff;
+  z-index: 4;
+}
+div.gradient {
+  height: 10.5vw;
+  z-index: 5;
+  margin-top: -10.5vw;
+  background: linear-gradient(to top, #1E6CFF, transparent);
+}
+
+img.add-photo {
+  width: 2vw;
+  z-index: 6;
+  margin-top: -6vw;
+  margin-left: 85vw;
+}
+
+div.create-content {
+  width: 74.6vw;
+  height: 10vw;
+  margin-left: 12.7vw;
+  margin-top: 3.5vw;
+}
+
+div.create-content .info{
+  height: 3vw;
+  display: grid;
+  grid-template-columns: 62.1vw 12.5vw;
+}
+
+div .info .creator-info {
+  display: grid;
+  grid-template-columns: 3vw 59.1vw;
+}
+div .info .creator-info .user-avatar img {
+  width: 3vw;
+}
+
+div .info .creator-info .user-info {
+  padding-left: 0.6vw;
+  width: 14.3vw;
+  color: #2E333A;
+}
+
+div .info .creator-info .user-info h3 {
+  font-size: 1.2vw;
+  font-weight: bold;
+  line-height: 1.5;
+}
+div .info .creator-info .user-info h4 {
+  font-size: 1.1vw;
+  font-weight: normal;
+}
+
+div .info .create-button {
+  height: 3vw;
+  width: 12.5vw;
+  text-align: center;
+  line-height: 3vw;
+  color: #ffffff;
+  font-size: 1.25vw;
+  background-color: #1E6CFF;
+  border-radius: 0.5vw;
+  opacity: 40%;
+}
+
+div .content-info {
+  margin-top: 2vw;
+}
+
+div .content-info h1{
+  font-size: 2.5vw;
+  opacity: 40%;
+  font-weight: bold;
+}
+
+div .content-info p{
+  font-size: 1.25vw;
+  opacity: 40%;
+  font-weight: normal;
+}
+
+div .content-info .tags {
+  font-size: 1.1vw;
+  color: #959799;
+  display: inline-flex;
+  width: 20.3vw;
+  height: 3vw;
+  margin-top: 1.4vw;
+  margin-bottom: 1.4vw;
+}
+
+div .content-info .tag {
+  padding: 0.95vw;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  border: 0.07vw solid #1E6CFF;
+  border-radius: 50vw;
+  margin-right: 0.7vw;
+}
+
+div.description .divider {
+  height: 0.06vw;
+  background-color: #2E333A;
+  opacity: 40%;
+  margin-top: 1vw;
+}
+
+div.content-buttons {
+  margin-top: 2vw;
+}
+
+div.content-buttons h1 {
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+
+div.content-buttons h2 {
+  font-size: 1.25vw;
+  font-weight: normal;
+  margin-top: 0.5vw;
+}
+
+div.create-content-buttons {
+  margin-top: 1.4vw;
+}
+
+div.create-content-buttons img {
+  width: 30.2vw;
+  margin-left: 1.7vw;
+}
+div.create-content-buttons img:first-child {
+  margin-left: 0vw;
+}
+
+div.guide {
+  height: 20vw;
+  margin-top: 2vw;
+}
+
+div.guide h1 {
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+
+div.guide img {
+  width: 9.7vw;
+  margin-left: 32.45vw;
+  margin-top: 1.4vw;
+}

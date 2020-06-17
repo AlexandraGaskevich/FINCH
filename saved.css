@@ -1,0 +1,276 @@
+@import "reset.css";
+@import "fonts.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  transition: 800ms all ease;
+}
+
+body {
+  background-color: #F9FBFF;
+  font-family: Helvetica;
+  color: #2E333A;
+}
+
+div.menu-main {
+  z-index: 10;
+  font-size: 1.25vw;
+  font-weight: 500;
+  width: 100vw;
+  height: 6vw;
+  background-color: #ffffff;
+  position: fixed;
+}
+div.menu-main-list {
+  width: 96vw;
+  margin-left: 2vw;
+  margin-top: 1.1vw;
+}
+div.menu-main-list ul {
+  width: 96vw;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+  margin-top: -0.2vw;
+}
+div.menu-main-list ul img{
+  width: auto;
+  height: 2vw;
+}
+div.menu-main-list ul a.logo img{
+  margin-top: -0.3vw;
+}
+div.menu-main-list a {
+  text-decoration: none;
+  display: block;
+  color: #2E333A;
+}
+div.menu-main-list li {
+  display: inline-block;
+  padding-left: 1.7vw;
+}
+div.menu-main-list li:first-child {
+  padding-left: 0vw;
+}
+
+li a.mainpage p {
+  opacity: 40%;
+}
+li a.mainpage p:hover {
+  opacity: 60%;
+}
+
+li a.following p {
+  opacity: 40%;
+}
+
+li a.following p:hover {
+  opacity: 60%;
+}
+
+div.menu-main-list li div.search {
+  background-color: #EAEBEB;
+  width: 63vw;
+  height: 3.75vw;
+  border-radius: 50vw;
+}
+div.menu-main-list li div.search p {
+  padding-top: 1.4vw;
+  padding-left: 1.4vw;
+  opacity: 40%;
+}
+
+div.menu-main-list li .saved img {
+  width: 4vw;
+  height: 4vw;
+  margin-left: -1vw;
+  margin-right: -1vw;
+}
+
+div.selections {
+  z-index: 0;
+  width: 75.5vw;
+  margin-left: 12.25vw;
+  padding-top: 9vw;
+  height: 100vw;
+}
+div .selection {
+  margin-top: 4.8vw;
+}
+div .selection:first-child {
+  margin-top: 0vw;
+}
+
+div.cards {
+  display: grid;
+  grid-template-columns: 25vw 25vw 25vw;
+}
+
+div.Title {
+  margin-left: 2vw;
+  padding-bottom: 2vw;
+}
+
+div.Title h1 {
+  font-size: 2vw;
+  font-weight: bold;
+  line-height: 1.6;
+}
+
+div.Title h2 {
+  line-height: 1;
+  font-size: 1.6vw;
+  opacity: 40%;
+}
+
+div.card {
+  width: 22.5vw;
+  margin-left: 2vw;
+  height: 32vw;
+  background-color: #ffffff;
+  border-radius: 1.05vw;
+  box-shadow: 0 0 0.6vw #E9EBEF;
+}
+div.card-empty {
+  width: 22.5vw;
+  margin-left: 2vw;
+  height: 32vw;
+}
+
+div .card .image {
+  height: 14.5vw;
+  background-color: #EFD0B9;
+  border-radius: 1.05vw 1.05vw 0 0;
+}
+
+div .card .image img {
+  height: 14.5vw;
+  border-radius: 1.05vw 1.05vw 0 0;
+}
+div .card .image .gradient {
+  height: 8.6vw;
+  width: 22.5vw;
+  margin-top: 5.9vw;
+  background: linear-gradient(to top, #1E6CFF, transparent);
+  position: absolute;
+  z-index: 2;
+}
+
+div .card .info {
+  width: 20.3vw;
+  margin-left: 1.1vw;
+  height: 3vw;
+  display: grid;
+  grid-template-columns: 17.3vw 3vw;
+  margin-top: -4.1vw;
+  position: relative;
+  z-index: 3;
+}
+
+div .card .info .guide-info {
+  display: grid;
+  grid-template-columns: 3vw 14.3vw;
+}
+div .card .info .guide-info .user-avatar img {
+  width: 3vw;
+}
+
+div .card .info .guide-info .user-info {
+  padding-top: 0.15vw;
+  padding-left: 0.6vw;
+  width: 14.3vw;
+  color: #ffffff;
+}
+
+div .card .info .guide-info .user-info h3 {
+  font-size: 1.2vw;
+  font-weight: bold;
+  line-height: 1.5;
+}
+div .card .info .guide-info .user-info h4 {
+  font-size: 1.1vw;
+  font-weight: normal;
+}
+div .card .info .save-button img {
+  width: 3vw;
+  height: 3vw;
+  opacity: 100%;
+}
+
+div .card .tags {
+  font-size: 1.1vw;
+  color: #1E6CFF;
+  display: inline-flex;
+  width: 20.3vw;
+  margin-left: 1.1vw;
+  height: 3vw;
+  margin-top: 2.2vw;
+}
+
+div .card .tag {
+  padding: 0.95vw;
+  padding-left: 1.2vw;
+  padding-right: 1.2vw;
+  border: 0.07vw solid #1E6CFF;
+  border-radius: 50vw;
+  margin-right: 0.7vw;
+}
+
+div .text {
+  width: 20.1vw;
+  padding-left: 1.2vw;
+  padding-top: 1vw;
+}
+div .text .name {
+  font-size: 1.6vw;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+div .text .description{
+  font-size: 1.25vw;
+  line-height: 1.3;
+  height: 5vw;
+}
+
+div .text .card-button {
+  margin-top: 1vw;
+  font-size: 1.25vw;
+  line-height: 3.1vw;
+
+  width: 12.5vw;
+  height: 3vw;
+  background-color: #1E6CFF;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 0.6vw;
+}
+
+div .card-button a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+div .selection .button {
+  font-size: 1.25vw;
+  color: #ffffff;
+  background-color: #1E6CFF;
+  width: 22.5vw;
+  height: 3vw;
+  text-align: center;
+  line-height: 3vw;
+  border-radius: 0.6vw;
+
+  margin-left: 2vw;
+  margin-top: 2vw;
+}
+div .selection .button a {
+  text-decoration: none;
+  color: #ffffff;
+}
